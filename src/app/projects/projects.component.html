@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="project-list" >
+    <div class="project-card" (click)="ShowProject('Restaurant')">
+      
+      <div class="project-details">
+        <h2>RestaurantMaster</h2>
+        <div *ngIf="isShowRestaurantProject">
+        <h4>Description:</h4>
+        <p> Migration of VB6.0 legacy project to latest .NET Core MVC using C#.</p>
+        <h4>Technology Used:</h4>
+        <p>Frontend : MVC, HTML, JAVASCRIPT, CSS, Kendo UI, Bootstrap<br>
+          Backend : C#, .NET Core, Dapper Micro ORM, Restful APIs<br>
+          Database: SQL Server</p>
+          <h4>Roles:</h4>
+          <p>Application development, Debugging, Project Maintenance, Unit testing <br>
+            Database Operations : Created Tables written SQL queries as per the project <br>
+            requirement Build a Web Api .net core 6.0 using Dapper for the database interaction</p>
+          </div>
+      </div>
+    </div>
+    <div class="project-card" (click)="ShowProject('finance')">
+      <div class="project-details" >
+        <h2 >FinancingStatement</h2>
+        <div *ngIf="IsShowFianceProject">
+        
+        <h4>Description:</h4>
+        <p> Migration of VB6.0 legacy project to latest .NET Core MVC using C#.
+        </p>
+        <h4>Technology Used:</h4>
+        <p>Frontend : MVC, HTML, JAVASCRIPT, CSS, Kendo UI, Bootstrap<br>
+          Backend : C#, .NET Core, Dapper Micro ORM, Restful APIs<br>
+          Database: SQL Server</p>
+          <h4>Roles:</h4>
+          <p>Application development, Debugging, Project Maintenance, Unit testing <br>
+            Database Operations : Created Tables written SQL queries as per the project <br>
+            requirement Build a Web Api .net core 6.0 using Dapper for the database interaction</p>
+      </div>
+    </div>
+  </div>
+  </div>
+</body>
+</html>
