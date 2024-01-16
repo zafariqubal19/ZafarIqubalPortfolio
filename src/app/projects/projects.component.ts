@@ -6,19 +6,27 @@ import { Component } from '@angular/core';
   styleUrl: './projects.component.css'
 })
 export class ProjectsComponent {
-  IsShowFianceProject:boolean=false
-  isShowRestaurantProject:boolean=false;
-  financeCount:number=0;
-  ShowProject(data:string){
+  IsShowFianceProject: boolean = false
+  isShowRestaurantProject: boolean = false;
+  IsShowAPDSProject:boolean=false;
+  financeCount: number = 0;
+  ShowProject(data: string) {
     debugger
-    if(data=="finance"){
-      this.IsShowFianceProject=true;
-      this.isShowRestaurantProject=false;
+    if (data == "finance") {
+      this.IsShowFianceProject = true;
+      this.isShowRestaurantProject = false;
+      this.IsShowAPDSProject=false;
     }
-    else if(data=="Restaurant"){
-      
-      this.IsShowFianceProject=false;
-      this.isShowRestaurantProject=true;
+    else if (data == "Restaurant") {
+
+      this.IsShowFianceProject = false;
+      this.isShowRestaurantProject = true;
+      this.IsShowAPDSProject=false;
+    }
+    else if(data=="apds"){
+      this.IsShowAPDSProject=true;
+      this.IsShowFianceProject = false;
+      this.isShowRestaurantProject = false;
     }
   }
 }
