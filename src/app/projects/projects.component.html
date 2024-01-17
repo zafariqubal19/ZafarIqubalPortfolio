@@ -9,10 +9,10 @@
 
 <body>
   <div class="project-list">
-    <div class="project-card" (click)="ShowProject('finance')">
+    <div class="project-card" (click)="ShowProjects('apds')">
       <div class="project-details">
         <h2>APDS</h2>
-        <div *ngIf="IsShowFianceProject">
+        <div *ngIf="IsShowAPDSProject">
 
           <h3>Description:</h3>
           <p> : It is a project for the cruise ship for maintaining the records of passengers ship safety drills.
@@ -30,7 +30,7 @@
         </div>
       </div>
     </div>
-    <div class="project-card" (click)="ShowProject('Restaurant')">
+    <div class="project-card" (click)="ShowProjects('Restaurant')">
 
       <div class="project-details">
         <h2>RestaurantMaster</h2>
@@ -49,10 +49,10 @@
         </div>
       </div>
     </div>
-    <div class="project-card" (click)="ShowProject('apds')">
+    <div class="project-card" (click)="ShowProjects('finance')">
       <div class="project-details">
         <h2>FinancingStatement</h2>
-        <div *ngIf="IsShowAPDSProject">
+        <div *ngIf="IsShowFianceProject">
 
           <h3>Description:</h3>
           <p> Migration of VB6.0 legacy project to latest .NET Core MVC using C#.
@@ -66,6 +66,26 @@
           </p>
           <h4>Database Operations :</h4><p> Created Tables written SQL queries as per the project
             requirement Build a Web Api .net core 6.0 using Dapper for the database interaction</p>
+        </div>
+      </div>
+    </div>
+    <div class="project-card" (click)="ShowProjects('split')">
+      <div class="project-details">
+        <h2>Splitwise Clone</h2>
+        <div *ngIf="IsShowSplitwise">
+
+          <h3>Description:</h3>
+          <p> It is web application clone of splitwise application with basic design and the all the functionality of the splitwise application.
+          </p>
+          <h3>Technology Used:</h3>
+          <h4>Frontend :</h4> <p>Angular,TypeScript, HTML, CSS, Bootstrap</p>
+          <h4>  Backend :</h4> <p> C#, .NET Core, ADO.NET, Restful APIs</p>
+          <h4>Database:</h4> <p>SQL Server</p>
+          <h4>Roles:</h4>
+          <p> Application development, Debugging, Security Implementation, Project Maintenance, Unit testing
+          </p>
+          <h4>Database Operations :</h4><p> Created Tables written SQL queries as per the project
+            requirement Build a Web Api .net core 6.0 </p>
         </div>
       </div>
     </div>
